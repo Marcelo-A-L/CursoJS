@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 24px;
+}
+
+.flex-container {
+    display: flex;
+    /* flex-direction: row; */
+    /* Eixo principal */
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    /* align-content: space-between; */
+    /* Eixo secundário */
+    align-items: flex-start;
+    background: yellow;
+    height: 500px;
+
+    /* Espaçamento entre elementos */
+    /* gap: 30px; */
+
+    flex-flow: row nowrap;
+}
+
+.flex-item {
+    /* flex-grow: 1; */
+
+    /* Reservo um espaço para cada um dos itens */
+    /* flex-basis: 320px; */
+
+    /* Não permite o elemento diminuir - 0 */
+    /* flex-shrink: 0; */
+
+    /* Atalho: grow, shrink, basis */
+    /* flex: 1 1 320px; */
+
+    width: 100%;
+    /* height: 200px; */
+    /* margin: 10px; */
+    /* margin-bottom: 2%; */
+    color: #fff;
+    background-color: red;
+}
+
+/* .flex-item:nth-child(2) {
+    flex: 10 1 320px;
+    background-color: purple;
+} */
+
+.flex-item:nth-child(3) {
+    align-self: flex-end;
+}
+
+.flex-item:nth-child(4) {
+    align-self: center;
+    order: -1;
+}
+
+.flex-item:nth-child(2) {
+    align-self: stretch;
+    order: -3;
+}
+
+.flex-item:nth-child(1) {
+    order: 1;
+}
+
+.flex-item:nth-child(5) {
+    order: -2;
+}
+
+.two-columns {
+    display: flex;
+}
+
+
+.two-columns .col {
+    display: flex;
+    flex-direction: column;
+    background: lawngreen;
+    margin: 15px;
+    padding: 30px;
+}
+
+p {
+    margin: 0 0 24px;
+}
+
+.gallery {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.gallery .img {
+    flex: 1 0 20%;
+    height: 50px;
+    margin: 10px;
+    background-color: blue;
+}

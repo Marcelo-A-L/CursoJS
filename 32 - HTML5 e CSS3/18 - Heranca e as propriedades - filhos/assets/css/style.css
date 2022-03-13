@@ -1,0 +1,10 @@
+body {
+    color: red;
+    font-family: sans-serif;
+    font-size: 24px;
+}
+
+p {
+    font-size: inherit;
+    color: initial;
+}

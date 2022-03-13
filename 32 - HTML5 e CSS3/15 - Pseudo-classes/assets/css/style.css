@@ -1,0 +1,86 @@
+.heading {
+    transition: all 300ms ease-in-out;
+}
+
+.heading:hover {
+    background-color: red;
+}
+
+a {
+    color: darkorange;
+}
+
+a:link {
+    color: deeppink;
+}
+
+a:visited {
+    color: firebrick;
+}
+
+a:hover {
+    background-color: darkslateblue;
+    color: white;
+    text-decoration: none;
+}
+
+a:active {
+    background-color: yellow;
+    color: white;
+    text-decoration: none;
+}
+
+/* input:focus {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    outline: none;
+    border: 1px solid black;
+}
+
+input:disabled {
+    background-color: rebeccapurple;
+    cursor: not-allowed;
+}
+
+input:enabled {
+    background-color: firebrick;
+    cursor: pointer;
+} */
+
+input:checked+p {
+    background-color: #1d3557;
+    color: white;
+}
+
+.pai .lista li:last-child {
+    background: red;
+}
+
+p:not(.meio) {
+    color: blue;
+}
+
+input:not(:checked)+p {
+    background-color: rgb(93, 138, 189);
+    color: white;
+}
+
+.lista2 li:nth-child(even) {
+    /*even, somente os índice pares */
+    background-color: #e63946;
+}
+
+.lista2 li:nth-child(odd) {
+    /*odd, somente os índice impares */
+    background-color: #f1faee;
+}
+
+.lista2 li:nth-child(3n) {
+    background-color: #a8dadc;
+    color: black;
+}
+
+.lista2 li:nth-child(3n+5) {
+    /* Começa do quinto elemento e conta em 3 em 3 */
+    background-color: #457b9d;
+    color: black;
+}

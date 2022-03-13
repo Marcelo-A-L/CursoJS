@@ -1,0 +1,21 @@
+/* style > ID > Classes > Atributos > Pseudo-classes > Elementos > Pseudo-elementos */
+
+#p {
+    background: linear-gradient(67deg, #92BCB0, #40268b);
+}
+
+.p {
+    background: blue;
+}
+
+p {
+    background: orange !important;
+}
+
+#p.p {
+    background: #7D21C2;
+}
+
+p#p.p {
+    background: #068131;
+}

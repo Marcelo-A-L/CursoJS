@@ -1,0 +1,41 @@
+/* Seletor Universal. Ex. Zerar o CSS*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Seletor por atributo */
+
+[meu-atributo~=valor2] {
+    color: red;
+}
+
+[checked] {
+    width: 40px;
+    height: 40px;
+}
+
+/* Seletor seguido por traço */
+
+[meuAtributoSeguido1 |="valor"] {
+    color: blue;
+}
+
+/* Seletor por inicio de caracteres (começa com), na primeira classe por exemplo */
+
+[meuAtributoSeguido2 ^="come"] {
+    color: red;
+}
+
+/* Termina com (última classe */
+
+[meuAtributoSeguido3 $="ol"] {
+    color: green;
+}
+
+/* Seletor de contém */
+
+[meuAtributoSeguido4*="a no"] {
+    color: yellow;
+}

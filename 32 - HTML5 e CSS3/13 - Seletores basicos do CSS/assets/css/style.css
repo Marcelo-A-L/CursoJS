@@ -1,0 +1,71 @@
+/* Seletor Universal. Ex. Zerar o CSS*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Seletor por tag */
+
+h1,
+p {
+    color: black;
+}
+
+/* Seleção de descendente */
+
+body div section p,
+body div section h1 {
+    color: red;
+}
+
+/* Classes */
+
+.color-lawngreen {
+    color: lawngreen;
+}
+
+.main-content h2.heading {
+    font-style: italic;
+    color: darkviolet;
+}
+
+/* Herança */
+
+div {
+    color: initial;
+    margin-left: 20px;
+}
+
+/* Filho direto */
+
+.pai>.filha>.filha {
+    color: red;
+}
+
+/* Seletores adjacentes/irmãos */
+
+.pai h1+p {
+    color: blue;
+}
+
+.pai p+h1 {
+    color: red;
+}
+
+/* Seletor geral de irmãos */
+
+.pai .um~.dois {
+    color: red;
+}
+
+/* Seletor por atributo */
+
+[meu-atributo="valor"] {
+    color: red;
+}
+
+[checked] {
+    width: 40px;
+    height: 40px;
+}

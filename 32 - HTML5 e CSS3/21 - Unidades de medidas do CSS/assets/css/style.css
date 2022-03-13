@@ -1,0 +1,70 @@
+html {
+    font-size: 62.5%;
+    /* Equivale a 10px de 16px padrão */
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.abs {
+    font-size: 64px;
+}
+
+.mae {
+    width: 100vw;
+    height: 100vh;
+    /* width: 30rem; */
+    /* height: 30rem; */
+    background: yellow;
+}
+
+.color-one {
+    background-color: turquoise;
+}
+
+.color-two {
+    background-color: orchid;
+}
+
+.mae p {
+    font-size: 2rem;
+}
+
+.pai {
+    width: 50rem;
+    height: 100vh;
+    background-color: blueviolet;
+}
+
+.pai>div {
+    width: 50%;
+    height: 50rem;
+    background-color: brown;
+}
+
+.pai p {
+    font-size: 1.6rem;
+    /* 10 x 1.6 = 16px */
+}
+
+.vMax>p {
+    background-color: black;
+    color: white;
+    font-size: 2vmax;
+}
+
+
+/* html {
+    font-size: 30px;
+}
+
+.pai p {
+    font-size: 0.5em;
+}
+
+.mae p {
+    font-size: 0.5rem;
+} */

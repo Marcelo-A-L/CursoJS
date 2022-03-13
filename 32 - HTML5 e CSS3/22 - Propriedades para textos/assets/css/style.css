@@ -1,0 +1,17 @@
+p {
+    /* color: red; */
+    /* background-color: turquoise; */
+    font-size: 20px;
+    /* font-style: italic; */
+    /* font-weight: bold; */
+    /* direction: rtl; */
+    /* letter-spacing: 5px; */
+    /* word-spacing: 5px; */
+    /* line-height: 40px; */
+    /* text-align: center; */
+    /* text-decoration: overline underline; */
+    text-indent: 40px;
+    /* h-shadow - v-shadow - blur-radius - color */
+    text-shadow: 2px 5px 10px blue;
+    text-transform: capitalize;
+}

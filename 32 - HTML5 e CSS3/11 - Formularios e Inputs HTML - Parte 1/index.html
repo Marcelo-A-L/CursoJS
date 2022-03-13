@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários e Inputs HTML - Parte 1</title>
+
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        label {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <form action="#" method="get" target="_blank" autocomplete="off">
+            <p>Meu formulário</p>
+            <p>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" placeholder="Digite seu nome"> <!-- required -->
+            </p>
+
+            <p>
+                <label for="dev1">Sou um dev</label>
+                <input type="checkbox" name="dev1" id="dev1" value="Sim"> <br> <!-- checked -->
+                <label for="dev2">Sou um dev</label>
+                <input type="checkbox" name="dev2" id="dev2" value="Sim"> <br>
+                <label for="dev3">Sou um dev</label>
+                <input type="checkbox" name="dev3" id="dev3" value="Sim">
+            </p>
+
+            <p>
+                Gênero: <br>
+                <label for="feminino">Feminino</label>
+                <input type="radio" name="genero" id="feminino" value="Feminino"> <br>
+                <label for="masculino">Masculino</label>
+                <input type="radio" name="genero" id="masculino" value="Masculino"> <br>
+                <label for="outro_outra">Outro ou Outra</label>
+                <input type="radio" name="genero" id="outro_outra" value="Outro_outra">
+            </p>
+
+            <p>
+                <label for="data">Date:</label>
+                <input type="date" name="data" id="data" value="2022-01-11">
+            </p>
+
+            <p>
+                <label for="datatime">Date Time:</label>
+                <input type="datetime-local" name="datatime" id="datatime" value="2022-02-11T17:30">
+            </p>
+
+            <p>
+                <label for="time">Time:</label>
+                <input type="time" name="time" id="time" value="20:30:40">
+            </p>
+
+            <p>
+                <label for="cor">Cor:</label>
+                <input type="color" name="cor" id="cor" value="#FF10BB">
+            </p>
+
+            <p>
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email" placeholder="ex.: email@email.com">
+            </p>
+
+            <p>
+                <label for="file">Sua foto:</label>
+                <input type="file" name="file" id="file" accept=".png, .svg, image/*" multiple>
+            </p>
+
+            <p>
+                <label for="number">Number:</label>
+                <input type="number" name="number" id="number" placeholder="Digite um número" min="10" max="50"
+                    step="5">
+            </p>
+
+            <p>
+                <label for="password">Sua senha:</label>
+                <input type="password" name="password" id="password" placeholder="Digite a sua senha">
+            </p>
+
+            <p>
+                <label for="range">Range:</label>
+                <input type="range" name="range" id="range" list="tickmarks">
+
+                <datalist id="tickmarks">
+                    <option value="0" label="0%"></option>
+                    <option value="10"></option>
+                    <option value="20"></option>
+                    <option value="30"></option>
+                    <option value="40"></option>
+                    <option value="50" label="50%"></option>
+                    <option value="60"></option>
+                    <option value="70"></option>
+                    <option value="80"></option>
+                    <option value="90"></option>
+                    <option value="100" label="100%"></option>
+                </datalist>
+            </p>
+
+            <p>
+                <label for="url">Sua url:</label>
+                <input type="url" name="url" id="url" placeholder="URL">
+            </p>
+
+            <p>
+                <label for="search">Sua busca:</label>
+                <input type="search" name="search" id="search" placeholder="search">
+            </p>
+
+            <p>
+                <label for="select">Selecione alguma opção:</label>
+                <select name="select" id="select" multiple>
+                    <optgroup label="grupo 1">
+                        <option value="valor 1" label="Isso é diferente do valor"></option>
+                        <option value="valor 2" disabled>valor 2</option>
+                        <option value="valor 3" label="valor 3" selected></option>
+                        <option value="valor 4" label="valor 4"></option>
+                    </optgroup>
+                    <optgroup label="grupo 2">
+                        <option value="valor 5" label="Isso é diferente do valor 5"></option>
+                        <option value="valor 6" disabled>valor 6</option>
+                        <option value="valor 7" label="valor 7"></option>
+                        <option value="valor 8" label="valor 8"></option>
+                    </optgroup>
+                </select>
+            </p>
+
+            <p>
+                <label for="textarea">Textarea:</label>
+                <textarea name="textarea" id="textarea" cols="10" rows="3">Hello World! 😎👌</textarea>
+            </p>
+
+            <p>
+                <button type="reset">Reset</button>
+                <button type="submit">Enviar</button>
+            </p>
+
+            <!-- <p>
+                <label>
+                    Nome:
+                    <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+                </label>
+            </p> -->
+
+
+            <!-- <h1>Cabeça</h1>
+            <p>O formulário</p>
+
+            <fieldset>
+                <legend>Descrição</legend>
+                <p>
+                    <input type="text" name="" id="">
+                </p>
+            </fieldset> -->
+        </form>
+    </section>
+</body>
+
+</html>

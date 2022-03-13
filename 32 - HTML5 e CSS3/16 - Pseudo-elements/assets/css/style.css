@@ -1,0 +1,37 @@
+/* Pseudo-elements utiliza :: */
+
+/* after, depois do elemento */
+
+ul li::after {
+    content: ' - ';
+}
+
+/* before, antes do elemento */
+
+ul li::before {
+    content: ' - ';
+}
+
+p {
+    font-size: 24px;
+}
+
+p::first-letter {
+    font-size: 50px;
+    display: block;
+    float: left;
+    margin: 0 10px 10px 0;
+}
+
+p::first-line {
+    background-color: #5800FF;
+}
+
+p::selection {
+    background-color: black;
+    color: white;
+}
+
+.place::placeholder {
+    color: red;
+}

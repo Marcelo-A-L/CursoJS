@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.pai {
+    padding: 15px;
+}
+
+.pai .bloco {
+    padding: 15px;
+    /* width: 33.33%; */
+    height: 200px;
+    float: left;
+}
+
+.pai .content {
+    width: 100%;
+    height: 100%;
+    background-color: red;
+}
+
+@media (max-width: 568px) {
+    .pai .bloco {
+        width: 100%;
+    }
+}
+
+@media all and (min-width: 568px) and (max-width: 768px) {
+    .pai .bloco {
+        width: 50%;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 1200px) {
+    .pai .bloco {
+        width: 33.33%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .pai .bloco {
+        width: 25%;
+    }
+}
